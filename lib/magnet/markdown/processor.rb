@@ -1,25 +1,26 @@
 require 'html/pipeline'
 require 'magnet/markdown'
+require 'magnet/markdown/filter'
 
 class Magnet::Markdown::Processor
   DEFAULT_CONTEXT = {
-    asset_root: '/images',
-    gfm: true
+    emoji_root: '/images'
   }.freeze
 
   DEFAULT_FILTERS = [
-    HTML::Pipeline::MarkdownFilter,
-    HTML::Pipeline::SanitizationFilter,
+    Magnet::Markdown::Filter::Markdown,
+    Magnet::Markdown::Filter::Sanitize,
     HTML::Pipeline::ImageMaxWidthFilter,
-    HTML::Pipeline::EmojiFilter
+    Magnet::Markdown::Filter::Emoji
   ].freeze
 
-  def initialize(context = {})
+  def initialize(context = nil)
+    context ||= {}
     @context = DEFAULT_CONTEXT.merge(context)
   end
 
-  def call(input, context = {})
-    HTML::Pipeline.new(filters, @context).call(input, context)
+  def call(input, context = nil)
+    HTML::Pipeline.new(filters, @context).call(input, context || {})
   end
 
   def filters

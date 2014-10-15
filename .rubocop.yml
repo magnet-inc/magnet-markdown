@@ -15,3 +15,6 @@ FileName:
   Exclude:
     - 'lib/magnet-markdown.rb'
   Enabled: true
+
+LineLength:
+  Max: 124
