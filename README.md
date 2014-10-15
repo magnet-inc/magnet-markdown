@@ -1,6 +1,6 @@
 # Magnet::Markdown
 
-[![Build Status](https://travis-ci.org/magnet-inc/magnet-markdown.svg)](https://travis-ci.org/magnet-inc/magnet-markdown)
+[![Gem Version](https://badge.fury.io/rb/magnet-markdown.svg)](http://badge.fury.io/rb/magnet-markdown) [![Build Status](https://travis-ci.org/magnet-inc/magnet-markdown.svg)](https://travis-ci.org/magnet-inc/magnet-markdown) [![Dependency Status](https://gemnasium.com/magnet-inc/magnet-markdown.svg)](https://gemnasium.com/magnet-inc/magnet-markdown)
 
 Magent specified markdown processor. Inspired by [qiita-markdown](https://github.com/increments/qiita-markdown).
 
