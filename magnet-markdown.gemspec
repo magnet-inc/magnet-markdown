@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Magnet::Markdown::VERSION
   spec.authors       = ['Sho Kusano']
   spec.email         = ['sho-kusano@mgnt-inc.jp']
-  spec.summary       = %q(Magnet specified markdown processor)
+  spec.summary       = 'Magnet specified markdown processor'
   spec.homepage      = 'https://github.com/magnet-inc/magnet-markdown'
   spec.license       = 'MIT'
 

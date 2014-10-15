@@ -31,7 +31,7 @@ class Magnet::Markdown::Filter::Emoji < HTML::Pipeline::Filter
   end
 
   def emojify(html)
-    html.gsub(self.class.regexp_pattern) do |match|
+    html.gsub(self.class.regexp_pattern) do |_match|
       name = Regexp.last_match['name']
       self.class.img_tag % { name: name, src: src_url(name) }
     end
