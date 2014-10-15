@@ -25,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'github-markdown', '~> 0.6'
   spec.add_dependency 'sanitize', '~> 3.0'
   spec.add_dependency 'gemoji', '~> 2.0'
-  spec.add_dependency 'rinku', '~> 1.7'
   spec.add_dependency 'html-pipeline', '~> 1.11'
 end
