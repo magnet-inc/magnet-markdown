@@ -1,5 +1,7 @@
 # Magnet::Markdown
 
+[![Build Status](https://travis-ci.org/magnet-inc/magnet-markdown.svg)](https://travis-ci.org/magnet-inc/magnet-markdown)
+
 Magent specified markdown processor. Inspired by [qiita-markdown](https://github.com/increments/qiita-markdown).
 
 Default processors:
