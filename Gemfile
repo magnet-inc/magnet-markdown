@@ -8,4 +8,6 @@ group :development do
   gem 'guard-rubocop'
   gem 'test-unit-notify'
   gem 'guard-test'
+  gem 'pry-byebug'
+  gem 'terminal-notifier'
 end

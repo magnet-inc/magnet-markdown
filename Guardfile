@@ -6,8 +6,8 @@ guard :rubocop do
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
 
-guard 'test' do
+guard :test do
   watch(/^lib\/(.*)\.rb/)                              { |m| "test/lib/#{m[1]}_test.rb" }
   watch(/^test\/(.*)_test.rb/)
-  watch(/^test\/test_helper.rb/)                       { "test" }
+  watch(/^test\/test_helper.rb/)                       { 'test' }
 end
