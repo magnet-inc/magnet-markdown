@@ -1,9 +1,14 @@
 AllCops:
   Include:
-    - '**/Rakefile'
-    - '**/config.ru'
+    - 'Rakefile'
+    - 'config.ru'
     - '*.gemspec'
     - 'Gemfile'
 
 Documentation:
   Enabled: false
+
+FileName:
+  Exclude:
+    - 'lib/magnet-markdown.rb'
+  Enabled: true
