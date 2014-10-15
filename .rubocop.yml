@@ -8,6 +8,9 @@ AllCops:
 Documentation:
   Enabled: false
 
+ClassAndModuleChildren:
+  Enabled: false
+
 FileName:
   Exclude:
     - 'lib/magnet-markdown.rb'
