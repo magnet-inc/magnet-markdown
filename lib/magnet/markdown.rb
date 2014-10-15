@@ -1,0 +1,1 @@
+require 'magnet/markdown/version'
