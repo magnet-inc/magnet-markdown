@@ -1,2 +1,9 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '*.gemspec'
+    - 'Gemfile'
+
 Documentation:
   Enabled: false
