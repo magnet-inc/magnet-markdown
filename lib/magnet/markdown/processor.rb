@@ -24,6 +24,6 @@ class Magnet::Markdown::Processor
   end
 
   def filters
-    @filters ||= DEFAULT_FILTERS.clone
+    @filters ||= DEFAULT_FILTERS.dup
   end
 end
