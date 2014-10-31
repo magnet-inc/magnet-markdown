@@ -70,7 +70,7 @@ class Magnet::Markdown::Filter::Sanitize < HTML::Pipeline::Filter
   end
 
   def call
-    ::Sanitize.node!(doc, rule)
+    ::Sanitize.clean_node!(doc, rule)
     doc
   end
 
