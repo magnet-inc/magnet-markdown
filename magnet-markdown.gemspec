@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'test-unit', '~> 3.0'
 
   spec.add_dependency 'github-markdown', '~> 0.6'
-  spec.add_dependency 'sanitize', '~> 3.0'
+  spec.add_dependency 'sanitize'
   spec.add_dependency 'gemoji', '~> 2.0'
   spec.add_dependency 'html-pipeline', '~> 1.11'
 end
