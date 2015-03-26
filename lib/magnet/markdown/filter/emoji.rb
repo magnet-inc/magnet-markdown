@@ -15,8 +15,8 @@ class Magnet::Markdown::Filter::Emoji < HTML::Pipeline::Filter
   end
 
   def call
-    doc.search('text()').each do |node|
-      content = node.to_html
+    doc.search('.//text()').each do |node|
+      content = node.text
       next unless content.include?(':')
       next if has_ancestor?(node, %w(pre code tt))
       html = emojify(content)

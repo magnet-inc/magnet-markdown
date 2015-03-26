@@ -50,6 +50,9 @@ class Magnet::Markdown::ProcessorTest < Test::Unit::TestCase
     assert { !output.include?('/images/emoji') && output.include?('http://static.emoji/emoji') }
     @call_context = { emoji_root: 'http://static.emoji/', emoji_path: 'images/emoji/:filename' }
     assert { output.include?('http://static.emoji/images/emoji/unicode/') }
+    @input = '<b>test</b> :thumbsup:'
+    assert { output.include?('<img') }
+    assert { output.include?('<b') }
   end
 
   private
